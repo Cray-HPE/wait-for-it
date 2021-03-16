@@ -44,5 +44,4 @@ jobs:
           context: .
           push: true
           tags: gcr.io/sdlc-ops/wait-for-it:${{steps.tag.outputs.tag}}
-          password: ${{ secrets.GCR_JSON_KEY }}
         
