@@ -43,6 +43,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: gcr.io/cray-hpe/wait-for-it:${{steps.date.outputs.tag}}
+          tags: gcr.io/cray-hpe/wait-for-it:${{steps.tag.outputs.tag}}
           password: ${{ secrets.GCR_JSON_KEY }}
         
